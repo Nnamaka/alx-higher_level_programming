@@ -50,7 +50,7 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        @property
+    @property
     def width(self):
         """
         Getter method for attribute width
@@ -68,7 +68,7 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-        @property
+    @property
     def height(self):
         """
         Getter method for height attr
@@ -104,7 +104,7 @@ class Rectangle(Base):
             raise ValueError("x must be >= 0")
         self.__x = value
 
-        @property
+    @property
     def y(self):
         """
         Getter method for y attr
@@ -172,7 +172,7 @@ class Rectangle(Base):
             self.__x = args[3]
             self.__y = args[4]
         except IndexError:
-            pass
+            passOA
 
     def to_dictionary(self):
         """
@@ -182,4 +182,4 @@ class Rectangle(Base):
                 'width': getattr(self, 'width'),
                 'height': getattr(self, 'height'),
                 'x': getattr(self, 'x'),
-                'y': getattr(self, 'y')}
+            'y': getattr(self, 'y')}
