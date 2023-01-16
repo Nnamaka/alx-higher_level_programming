@@ -73,7 +73,7 @@ class Base:
             for k, v in enumerate(instances):
                 lists.append(cls.create(**instances[k]))
 
-        except:
+        except Exception as e:
             pass
         return lists
 
