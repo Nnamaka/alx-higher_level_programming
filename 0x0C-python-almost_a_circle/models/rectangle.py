@@ -182,4 +182,4 @@ class Rectangle(Base):
                 'width': getattr(self, 'width'),
                 'height': getattr(self, 'height'),
                 'x': getattr(self, 'x'),
-            'y': getattr(self, 'y')}
+                'y': getattr(self, 'y')}
