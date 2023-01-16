@@ -336,7 +336,7 @@ class TestRectangle_y(unittest.TestCase):
             Rectangle(1, 2, 3, complex(5))
 
     def test_dict_y(self):
-        with self.assertRaiOOAsesRegex(TypeError, "y must be an integer"):
+        with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Rectangle(1, 2, 1, {"a": 1, "b": 2})
 
     def test_list_y(self):
